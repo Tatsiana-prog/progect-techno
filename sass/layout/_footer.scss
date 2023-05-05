@@ -1,0 +1,16 @@
+.footer {
+    background: $color-bg;
+    height: 100%;
+    .navigation {
+        .container {
+            .navigation__row {
+                //*tablet big
+                @media (max-width: 1199px) {
+                    justify-content: center;
+                    opacity: 0.6;
+                }
+            }
+        }  
+    }            
+}          
+

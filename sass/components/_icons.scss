@@ -1,0 +1,37 @@
+.icon {
+    display: inline-flex;
+    width:25px ;
+    height:25px;
+    &_tel {
+        background: url("../img/icons/icon-tel.svg");
+    }
+    &_tel-colored {
+        background: url("../img/icons/icon-tel-white.svg");
+    }
+    &_mail {
+        background: url("../img/icons/icon-letter.svg");
+    }
+    &_map {
+        background: url("../img/icons/icon-map.svg");
+    }
+    &_file {
+        margin-right: 15px;
+        background: url("../img/icons/icon-file.svg");  
+    }
+}
+.icon_tel,.icon_tel-colored,.icon_mail,.icon_map, .icon_file  {   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;    
+} 
+
+.arrow-link {
+    width: 28px;
+    height: 5px;
+    background: url("../img/icons/arrow-link.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+

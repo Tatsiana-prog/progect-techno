@@ -1,0 +1,49 @@
+.button {
+    position: relative;
+    display: block;  
+    padding:15px 60px ;
+
+    @include font(1.4rem,1.8, bold);
+    @extend %font-prim; 
+
+    color: $color-text;
+    text-transform: uppercase;  
+    background: $color-accent;
+    cursor: pointer;
+    @extend %transition;
+    
+        &:hover {
+            color:$color-hover-add;
+        } 
+    }
+
+    
+
+.button.button_colored {
+    background: $color-light;
+    &:hover {
+        color:$color-hover-add;
+    }            
+    &.button_colored::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top:15px;
+        left: 10px;
+        width: 255px;
+        height: 50px;
+        border: 2px solid $color-accent;
+        background: transparent;        
+    }
+    
+}
+
+.span-color {
+    color:$color-accent;
+}
+
+
+
+
+
+

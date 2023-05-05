@@ -1,0 +1,42 @@
+.section-customers {
+    padding: 70px 0;
+    background: $color-light;
+}
+
+.customers__title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.customers__slider {
+    width: 87%;
+    height: auto;
+    margin: 0 auto 70px;
+}
+
+.slide {   
+    &.row:first {
+        margin-bottom: 30px;
+     }    
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    column-gap: 35px;
+    justify-content: center;
+}
+
+.card {
+    img {
+        object-fit: contain;
+    }   
+}
+
+.customers__map {    
+    box-shadow:
+       inset 0 -4em 4em rgba(0,0,0,0.1),
+             0 0  0 3px rgb(255,255,255),
+             0.5em 0.5em 1em rgba(0,0,0,0.3);
+}

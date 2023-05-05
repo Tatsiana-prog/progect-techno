@@ -1,0 +1,302 @@
+.section-products {
+    padding: 70px 0 153px;
+    background:$color-bg-section;
+}
+
+.products {
+    width: 100%;
+}
+
+.products__content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 100px;
+    margin-bottom: 20px;
+    align-items: center;
+    @media (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.products__text {
+    padding-top: 22px;
+    border-top: 3px solid $color-dark;
+    @include font (1.6rem, 1.75, normal);
+}
+
+.products__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.products__row-1,.products__row-2,.products__row-3 {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+}
+
+.products__row-1 {
+  //*tablet big
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+    row-gap: 15px;   
+    }  
+}
+
+.product-1 {
+    position: relative;
+    width: 40%;
+    height: 445px;
+    background: url('../img/products/img-1.jpg');    
+    //*tablet big
+    @media (max-width: 1199px) {
+    width: 49%;   
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        width: 48.5%;   
+    } 
+    //*mobile
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.product-2 {
+    position: relative;
+    width: 30%;
+    height: 445px;
+    background: url('../img/products/img-2.jpg');
+    //*tablet big
+    @media (max-width: 1199px) {
+    width: 49%;   
+    } 
+    //*tablet small
+    @media (max-width: 991px) {
+        width: 48.5%;   
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+    } 
+}
+
+.products-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 30%;
+    height: 445px;
+    //*tablet big
+    @media (max-width: 1199px) {
+    width: 100%;   
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    } 
+    //*mobile
+    @media (max-width: 767px) {
+        flex-direction: column;
+        flex-wrap: nowrap;        
+    }  
+}
+
+.product-3 {
+    position: relative;
+    width: 100%;
+    height: 48%;
+    background: url('../img/products/img-3.jpg') ;
+    //*tablet big
+    @media (max-width: 1199px) {
+        width: 40%; 
+        height: 100%;
+    } 
+    //*mobile
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 300px;
+    } 
+}
+
+.product-4 {
+    position: relative;
+    width: 100%;
+    height: 48%;
+    background: url('../img/products/img-4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    //*tablet big
+    @media (max-width: 1199px) {
+        width: 58%;
+        height: 100%; 
+    } 
+    //*mobile
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 300px;
+    } 
+}
+
+.products__row-2,.products__row-3 {
+    display: flex;
+    justify-content: space-between;
+    //*tablet big
+    @media (max-width: 1199px) {
+      flex-wrap: wrap;
+      row-gap: 15px; 
+    } 
+    //*mobile
+    @media (max-width: 767px) {
+       flex-direction: column;       
+    } 
+}
+
+.product-5 {
+    position: relative;
+    width: 19%;
+    height: 216px;
+    background: url('../img/products/img-5.jpg');
+    //*tablet big
+    @media (max-width: 1199px) {
+        width: 49%; 
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        width: 50.5%;
+        height: 316px; 
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 300px;
+    } 
+}
+
+.product__description {
+    height: 70px;
+}
+
+.product-6 {
+    position: relative;
+    width: 19%;
+    height: 216px;
+    background: url('../img/products/img-6.jpg');
+    //*tablet big
+    @media (max-width: 1199px) {
+        width: 49%; 
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        width: 47%;
+        height: 316px; 
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 300px;
+    } 
+    .product__title h4 {
+        color: $color-light;
+    }    
+}
+
+.product-7 {
+    position: relative;
+    width: 60%;
+    height: 216px;
+    background: url('../img/products/img-7.jpg');
+    //*tablet big
+    @media (max-width: 1199px) {
+        width: 100%;
+        height: 316px; 
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 300px;
+    } 
+}
+
+.product-8 {
+    position: relative;
+    width: 49.5%;
+    height: 216px;
+    background: url('../img/products/img-8.jpg');
+    //*tablet big
+    @media (max-width: 1199px) {
+        width: 40%;
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        width: 40.5%;
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.product-9 {
+    position: relative;
+    width: 49.5%;
+    height: 216px;
+    background: url('../img/products/img-9.jpg');
+    //*tablet big
+    @media (max-width: 1199px) {
+        width: 58%;
+    }
+    //*tablet small
+    @media (max-width: 991px) {
+        width: 57%;
+    }
+    //*mobile
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 300px;
+    } 
+}
+
+.product-1, .product-2,.product-3, .product-4, .product-5, .product-6,.product-7,.product-8,.product-9 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .product__title h4 {
+        color: $color-light;
+    }
+}
+
+.product__description {
+    position: absolute;
+    padding: 15px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $color-bg-add;
+    bottom: 0;
+    left: 0;
+}
+
+.product__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+    color: $color-accent;
+    @include font (1.4rem, 1.2, normal);
+    cursor: pointer;
+    @extend %transition;
+    cursor: pointer;
+    &:hover {
+        color:$color-hover-add; 
+    }
+}
+

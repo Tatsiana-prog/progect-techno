@@ -1,0 +1,41 @@
+//Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+// Base
+@import "base/reset";
+@import "base/typography";
+
+// Components
+@import "components/button";
+@import "components/modal-icon";
+@import "components/modal";
+@import "components/logo";
+@import "components/icons";
+
+// layout
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/section-about-us";
+@import "layout/section-contacts";
+@import "layout/section-customers";
+@import "layout/section-description";
+@import "layout/section-form";
+@import "layout/section-products";
+@import "layout/section-reviews";
+@import "layout/section-work";
+@import "layout/footer";
+
+
+
+
+
+
+
+
+
+
+
+
+

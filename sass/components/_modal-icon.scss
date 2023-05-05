@@ -1,0 +1,76 @@
+.modal-icon {   
+    width: 30px;
+    height: 25px;
+      
+    display: none;
+   	cursor: pointer;
+    z-index: 2;        
+    //*tablet big
+    @media (max-width: 1199px) {
+        display: block; 
+    }  
+}
+
+.modal-icon__middle {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: $color-accent;
+}
+
+.modal-icon__middle::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 5px;
+    border-radius: 20px;
+    top:-10px;
+    left: 0;
+    background-color:$color-accent;   
+}.modal-icon__middle::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height:5px;
+    border-radius: 20px;
+    top:10px;
+    left: 0;
+    background-color: $color-accent;   
+}
+
+/* Active state */
+.modal-icon--active {
+    position: fixed;
+    display: flex;
+    top: 40px;
+    right: 15px;
+    z-index: 2;
+}
+
+.modal-icon__midle--active {
+    background-color: transparent;
+}
+
+.modal-icon--active .modal-icon__middle {
+    background-color: transparent;
+}
+
+.modal-icon--active .modal-icon__middle::before {
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    background-color:$color-accent;
+    transition: top 0.1s linear, transform 0.2s ease-in 0.1s;  
+}
+
+.modal-icon--active .modal-icon__middle::after {
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg);
+    background-color:$color-accent;
+    transition: top 0.1s linear, transform 0.2s ease-in 0.1s;  
+}
+
+
+    
