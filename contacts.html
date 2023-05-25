@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="adress=no">
+
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Title and SEO -->
+		<title>Contacts</title>
+		<meta name="description" content="Сайт туристического агенства">
+		<meta name="keywords" content="portpholio,">
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+				
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Портфолио">
+		<meta property="og:description" content="Портфолио веб разработчика">
+		<!--<meta property="og:image" content="./img/opengraph.jpg"/>-->
+
+		<!-- Favicons 
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico">-->
+		<meta name="msapplication-TileColor" content="#00aba9">
+		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
+	</head>
+	<body>
+		<header class="header" data-aos="fade-down">
+				<div class="row">
+					<a href="Главная" class="logo">Travel</a>
+					<nav class="navbar">					
+						<a href="index.html">Главная</a></li>
+						<a href="about.html">О нас</a></li>
+						<a href="tours.html">Туры</a></li>
+						<a href="destinations.html">Направления</a></li>							
+						<a href="contacts.html">Контакты</a></li>
+					</nav>
+					<div id="menu-btn" class="fas fa-bars"></div>
+				</div>			
+		</header>
+		<!--contact section begins-->
+		<section class="section-contact">
+				<div class="container">
+					<div class="contact">
+						<h1 class="heading" data-aos="zoom-out">контакты</h1>
+						<div class="row">
+							<iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.328892093352!2d48.89777000404486!3d55.856959938680305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4159515d2683e21f%3A0x5a117fefbfac331c!2z0JrQsNC90YbQn9Cw0YDQug!5e0!3m2!1sru!2sby!4v1684397754711!5m2!1sru!2sby" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="flip-left"></iframe>
+							<form action="#" method="post"data-aos="flip-right">
+								<h3>связаться с нами</h3>
+								<input type="text" name="name" required maxlength="50" class="box" placeholder="Введите свое имя">
+								<input type="email" name="name" required maxlength="50" class="box" placeholder="Введите свой email">
+								<input type="number" name="number" required maxlength="10" min="0" max="9999999999" class="box" placeholder="Ваш номер телефона">
+								<textarea name="message" class="box" required maxlength="10000" cols="30" rows="10"></textarea>
+								<input type="submit" class="btn" value="Отправить сообщение" name="send" >
+							</form>
+						</div>
+						<div class="grid">
+							<div class="box" data-aos="fade-up">
+								<i class="fas fa-phone"></i>
+								<h3>номер телефона</h3>
+								<a href="tel:1234567890">+123-456-7890</a>
+								<a href="tel:1222222355">+122-222-2355</a>
+							</div>
+							<div class="box" data-aos="fade-up">
+								<i class="fas fa-envelope"></i>
+								<h3>Email адрес</h3>
+								<a href="mailto:youradress@gmail.com">youradress@gmail.com</a>						
+							</div>
+							<div class="box" data-aos="fade-up">
+								<i class="fas fa-map-marker-alt"></i>
+								<h3>Наш адрес</h3>
+								<a href="#">oфис п.1,Казань, Татарстан, Россия.</a>						
+							</div>
+						</div>			
+					</div>
+				</div>
+		</section>
+		<!--contact section ends-->		
+		<footer class="footer">
+				<div class="container">
+					<div class="footer-wrapper">
+						<a href="Главная" class="logo">Travel</a>
+						<div class="box">
+							<a href="tel:1234567890">+123-456-7890</a>
+							<a href="tel:1222222355">+122-222-2355</a>
+							<a href="mailto:youradress@gmail.com">youradress@gmail.com</a>
+						</div>
+					</div>			
+				</div>			
+		</footer>
+
+		<!--Vendor skripts(скрипты от поставщиков)-->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+		<!--user skripts-->		
+		<script src="./js/main.js"></script>		
+	</body>
+</html>

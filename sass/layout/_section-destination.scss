@@ -1,0 +1,51 @@
+.section-destinations {
+    background: url('../images/destinations/bg-destinations.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;}
+
+.destinations  {
+    & .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 30rem);
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1.5rem;        
+    }
+}
+
+.destinations .grid .box {
+    position: relative;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    & h3 {
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-dark-light;
+        backdrop-filter: blur(.4rem);
+        transition: .2s linear;
+        opacity: 0;
+    }
+}
+
+.destinations .grid .box:hover h3 {
+    opacity: 1;
+}
+
+.destinations .grid .box h3 span {
+    font-size: 2.5rem;
+    color:$color-white;
+}

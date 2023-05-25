@@ -1,30 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
 //Abstracts
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/placeholders";
 
+// Components
+@import "components/button";
+@import "components/elements";
+@import "components/logo";
+
+
+
 // Base
 @import "base/reset";
 @import "base/typography";
 
-// Components
-@import "components/button";
-@import "components/modal-icon";
-@import "components/modal";
-@import "components/logo";
-@import "components/icons";
 
 // layout
 @import "layout/header";
-@import "layout/navigation";
-@import "layout/section-about-us";
-@import "layout/section-contacts";
-@import "layout/section-customers";
-@import "layout/section-description";
-@import "layout/section-form";
-@import "layout/section-products";
-@import "layout/section-reviews";
-@import "layout/section-work";
+@import "layout/section-home";
+@import "layout/section-about";
+@import "layout/section-tours";
+@import "layout/section-destination";
+@import "layout/section-contact";
+
 @import "layout/footer";
 
 

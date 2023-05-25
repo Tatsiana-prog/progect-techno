@@ -1,0 +1,53 @@
+.section-home {
+    background: url('../images/home/bg-home.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   background-blend-mode: multiply;
+}
+
+.home {
+    min-height: calc(100vh - 10rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & form {
+        background-color: $color-light-bg;
+        border-radius: .5rem;
+        padding: 2rem;
+        width: 50rem;
+        backdrop-filter: blur(.4rem);
+        & h3 {
+            font-size: 2.5rem;
+            color: $color-white;
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+        & p {
+         padding-top: 1px;
+         font-size: 1.7rem;
+         color:$color-light;   
+        }
+        & .box {
+            width: 100%;
+            border-radius: 0.5rem;
+            padding: 1.4rem;
+            font-size: 1.8rem;
+            color: $color-white;
+            background: $color-light-bg;
+            text-transform: none;
+            margin: 1rem 0;
+        }
+    }
+}
+
+.home form .btn {
+    background-color: $color-main-color;
+    &:hover {
+        background-color: $color-dark-color;
+        color:$color-white;
+    }
+}
+.box::placeholder {
+    color: $color-white;
+} 

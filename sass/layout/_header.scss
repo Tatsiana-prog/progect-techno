@@ -1,51 +1,78 @@
 .header {
-    position: relative;
-    padding: 0;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, transparent, $color-dark-color);
+    z-index: 1000;     
+}
+
+.header .row {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2.5rem;
     margin: 0 auto;
-    width: 100%;
-    height: 870px;
-    background-image: url('../img/header/bg-image.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center; 
-    z-index: -2;
-     //*tablet small
-     @media (max-width: 991px) {
-        height: 670px;
-    }
-    //*mobile
-    @media (max-width: 767px) {
-        height: 570px;
-    }    
 }
 
-.header__title {
-    width: 56%;
-    margin-bottom: 60px;
-    //*mobile xs
-    @media (max-width: 575px) {
+.header .row .navbar a {
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    color:$color-light;
+    transition: .2s linear;
+    cursor: pointer;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        color:$color-white;
+    }
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color:$color-white;
+    display: none;    
+}
+
+//* media queries/
+@media(max-width:991px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .row {
+        position: relative;
+    }
+    .header .row .navbar {
+        position: absolute;
+        top:100%;
+        left:2rem;
+        right: 2rem;
+        margin: 0 auto;
+        background-color: $color-dark-light;
+        backdrop-filter: blur(.6rem);
+        border-radius: .5rem;
         width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;        
-    }
-    h1 {
-        color:$color-light;
-    }
-}
+        padding: 1.5rem 0;
 
-.header__content {
-    width: 40%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    //*mobile xs
-    @media (max-width: 575px) {
-        width: 100%;
-        transform: translate(-50%, -50%);
-        .button {
-            margin:0 auto;
-        }        
-    }   
+        transform: scale(0);
+        transform-origin: top right;
+        transition: .2s linear;
+    }
+    .header .row .navbar.active {
+        transform: scale(1);
+    }
+    .header .row .navbar a {
+        display: block;
+        padding:.5rem 0.5rem;
+        margin: 0.5rem 1.5rem;
+        color:$color-white;
+        border-radius: .5rem;
+        &:hover {
+            background-color: $color-light-bg;
+        }
+    }
 }

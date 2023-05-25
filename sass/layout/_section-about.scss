@@ -1,0 +1,130 @@
+.section-about {
+    background: url('../images/about/bg-about.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.about .details {
+    border-radius: .5rem;
+    background: url('../images/about/bg-details.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 60vh;
+    border-radius: .5rem;    
+}
+
+.about .details .box {
+    width: 50rem;
+    background-color: $color-light-bg;
+    padding:3rem 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+    & h3 {
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+        color:$color-white;
+    }
+    & p {
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: $color-white;
+        line-height: 2;
+    }
+    & .btn {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+.about .grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    & .box {
+        background-color: $color-light-bg;
+        padding: 2rem;
+        text-align: center;
+        backdrop-filter: blur(.4rem);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        & img {
+            margin-bottom: 3rem;
+            height: 20rem;
+            width: 100%;
+        }
+        & h3 {
+            color:$color-white;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.about .grid .box:hover {
+    background-color: $color-dark-light;
+}
+
+//section reviews
+.section-reviews {
+    width: 100%;
+    background: url('../images/reviews/reviews-bg.jpg') no-repeat rgba(0,0,0,.6);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.reviews .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    & .box {
+        background-color: $color-light-bg;
+        padding: 2rem;
+        text-align: center;
+        backdrop-filter: blur(.4rem);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        & .starts {
+            margin-top: 1rem;
+            & i {
+                font-size: 1.8em;
+                color:$color-main-color;
+            }
+        }
+        & h3 {
+            font-size: 2rem;
+            color:$color-white;
+        }
+        & p {
+            padding: 1rem 0;
+            line-height: 2;
+            color:$color-light;
+            font-size: 1.5rem;
+        }
+    }
+    & img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.reviews .grid .box:hover {
+    background-color: $color-dark-light;
+}

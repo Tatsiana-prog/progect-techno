@@ -1,0 +1,73 @@
+.section-tours {
+    height: 100%;
+    background: url('../images/tours/bg-tour.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+    & .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 35rem);
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1.5rem;        
+    }
+}
+
+.section-tours .grid .box {
+    background-color: $color-light-bg;
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: relative;
+
+    & .price {
+        position: absolute;
+        top:3rem;
+        left:3rem;
+        border-radius: .5rem;
+        background: $color-dark-light;
+        font-size: 1.8rem;
+        padding: .5rem 1.5rem;
+    }
+    & .image {
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: .5rem;
+        margin-bottom: 2rem;
+    }
+    & .name {
+        font-size: 2rem;
+        color:$color-white;
+    }
+    & i {
+        color:$color-main-color;
+        margin-right: 1rem;
+    }
+    & span {
+        color:$color-white;
+    }
+}
+
+.section-tours .grid .box:hover {
+  background: $color-dark-light;  
+}
+
+.section-tours .grid .box:hover .price {
+    background: $color-dark-color;  
+}
+
+.section-tours .grid .box:hover .price {
+    background: $color-dark-light;  
+}
+
+.section-tours .grid .box .adress {
+    font-size: 1.7rem;
+    color:$color-light;
+    line-height: 1.5rem;
+    padding: 0.5rem 0;
+}

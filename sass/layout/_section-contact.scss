@@ -1,0 +1,128 @@
+.section-contact {
+    background: url('../images/contact/bg-contact.jpg') no-repeat rgba(0,0,0,.5);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.contact  .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   
+    & .map {
+        width: 100%;
+        flex: 1 1 40rem;
+        padding: 2rem;
+        background-color:$color-light-bg;
+        border-radius: .5rem;
+        backdrop-filter: blur(.4rem);
+        }  
+    
+    & form {      
+        flex: 1 1 40rem;
+        padding: 2rem;
+        background-color:$color-light-bg;
+        border-radius: .5rem;
+        backdrop-filter: blur(.4rem);
+        //*mobile xs
+        @media (max-width: 575px) {
+        width: 80%;
+        }
+    }
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact .row form h3 {
+    text-align: center;
+    font-size: 2.5rem ;
+    color: $color-white;
+    padding-bottom: 1rem;
+}
+
+.contact .row  form {
+    & .box {
+        width: 100%;
+        margin: 1rem 0;
+        border-radius: .5rem;
+        background-color: $color-dark-light;
+        padding: 1.4rem;
+        font-size: 1.8rem;
+        color:$color-white;
+        text-transform: none;        
+    }
+
+    & textarea {
+       height: 15rem;
+       resize: none;
+        border-radius: .5rem;
+        background-color: $color-dark-light;
+        padding: 1.4rem;
+        font-size: 1.8rem;
+        color:$color-white;
+        text-transform: none;
+    }
+}
+.contact .row form .box::placeholder {
+    color:$color-light-bg;
+}
+.contact .row form .btn {
+    background-color: $color-main-color;    
+    &:hover {
+        background-color: $color-dark-color;
+        color:$color-white;
+    }
+}
+
+.contact  {
+    & .grid {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 30rem);
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1.5rem;        
+    }   
+}
+
+.contact .grid .box {
+    height: 23rem;
+    border-radius: .5rem;
+    background-color:$color-light-bg;
+    backdrop-filter: blur(.4rem);
+    padding: 3rem 2rem; 
+    text-align: center;
+    & i {
+        height: 5rem;
+        width: 6rem;
+        font-size: 2.5rem;        
+        border-radius: 0.5rem;
+        background-color: $color-dark-light;
+        color:$color-white;
+        margin-bottom: 1.5rem;
+    }
+    & h3 {
+        padding: .5rem 0;
+        font-size: 2rem;
+        color:$color-main-color;
+    }
+    & a {
+        display: block;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+        color:$color-light;
+        line-height: 1.5;
+        text-transform: none;
+    }
+}
+
+.contact .grid .box a:hover {
+    color:$color-white;
+    text-decoration: underline;
+}

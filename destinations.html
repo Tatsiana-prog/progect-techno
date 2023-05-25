@@ -10,16 +10,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Title and SEO -->
-		<title>Туристическое агенство</title>
+		<title>destinations</title>
 		<meta name="description" content="Сайт туристического агенства">
 		<meta name="keywords" content="portpholio,">
-
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 		<!-- Styles -->
 		<link rel="stylesheet" href="./css/main.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
 		<!-- Open Graph -->
 		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
@@ -52,39 +51,72 @@
 				<div id="menu-btn" class="fas fa-bars"></div>
 			</div>			
 		</header>
-		<!--home section begins-->
-		<section class="section-home" data-aos="zoom-out">
+
+		<!-- destinations section begins-->
+		<section class="section-destinations">
 			<div class="container">
-				<div class="home" data-aos="zoom-in" data-aos-delay="600">
-					<form action="" method="post">
-						<h3>Поиск вашего тура</h3>
-						<p>Куда</p>
-						<input type="text" name="location"  required maxlength="50" class="box" placeholder="Введите местоположение тура">
-						<p>Когда</p>
-						<input type="date" name="date" min="2023-05-19"required class="box">
-						<p>Сколько человек</p>
-						<input type="number" class="box" name="guests" min="1" max="10" maxlength="2" placeholder="количество" required>
-						<input type="submit" class="btn" name="search" value="Поиск тура" > 
-					</form>
+				<div class="destinations">
+					<h1 class="heading" data-aos="zoom-out">Направления</h1>
+					<div class="grid">
+						<div class="box" data-aos="zoom-in">
+							<image src="./images/destinations/destination-1.jpg" alt="picture"></image>
+							<h3><span>Стамбул</span></h3>
+						</div>
+						<div class="box" data-aos="zoom-in">
+							<image src="./images/destinations/destination-2.jpg" alt="picture"></image>
+							<h3><span>Калифорния</span></h3>
+						</div>
+						<div class="box" data-aos="zoom-in">
+							<image src="./images/destinations/destination-3.jpg" alt="picture"></image>
+							<h3><span>Лондон</span></h3>
+						</div>
+						<div class="box" >
+							<image src="./images/destinations/destination-4.jpg" alt="picture"></image>
+							<h3><span>Марокко</span></h3>
+						</div>
+						<div class="box" >
+							<image src="./images/destinations/destination-5.jpg" alt="picture"></image>
+							<h3><span>Нью-Йорк</span></h3>
+						</div>
+						<div class="box" data-aos="zoom-in">
+							<image src="./images/destinations/destination-6.jpg" alt="picture"></image>
+							<h3><span>Париж</span></h3>
+						</div>
+						<div class="box" data-aos="zoom-in">
+							<image src="./images/destinations/destination-7.jpg" alt="picture"></image>
+							<h3><span>Барселона</span></h3>
+						</div>
+						<div class="box" data-aos="zoom-in">
+							<image src="./images/destinations/destination-8.jpg" alt="picture"></image>
+							<h3><span>Сидней</span></h3>
+						</div>
+						<div class="box" data-aos="zoom-in">
+							<image src="./images/destinations/destination-9.jpg" alt="picture"></image>
+							<h3><span>Токио</span></h3>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 		</section>
-		<!--home section ends-->					
-		<footer class="footer">
-				<div class="container">
-					<div class="footer-wrapper">
-						<a href="Главная" class="logo">Travel</a>
-						<div class="box">
-							<a href="tel:1234567890">+123-456-7890</a>
-							<a href="tel:1222222355">+122-222-2355</a>
-							<a href="mailto:youradress@gmail.com">youradress@gmail.com</a>
-						</div>
-					</div>			
-				</div>			
-		</footer>
+		<!--destinations section ends-->
 
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-wrapper">
+					<a href="Главная" class="logo">Travel</a>
+					<div class="box">
+						<a href="tel:1234567890">+123-456-7890</a>
+						<a href="tel:1222222355">+122-222-2355</a>
+						<a href="mailto:youradress@gmail.com">youradress@gmail.com</a>
+					</div>
+				</div>			
+			</div>			
+		</footer>					
+		
 		<!--Vendor skripts(скрипты от поставщиков)-->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			
 		<!--user skripts-->		
 		<script src="./js/main.js"></script>		
 	</body>

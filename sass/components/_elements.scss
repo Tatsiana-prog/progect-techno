@@ -1,0 +1,49 @@
+//dollar
+.fa-dollar-sign:before, .fa-dollar:before, .fa-usd:before {
+    content: "\24";
+}
+//modal
+.fa-bars:before .fa-navicon:before {
+    content: "\2630";
+}
+//star
+.fa-star:before {
+    content: "\f005";
+   
+}
+.fas{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 44px;
+    text-rendering: auto;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;   
+}
+.reviews .grid .box .stars i {
+    font-size: 1.8rem;
+    color: $color-main-color;
+}
+.fa-phone, .fa-envelope, .fa-map-marker-alt {
+    position: relative;
+}
+
+.fa-phone:before {
+    content: "\f095";
+    position: absolute;
+    transform:translate(-50%, 50%);
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    position: absolute;
+    transform:translate(-50%, 50%);
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+    position: absolute;
+    transform:translate(-50%, 50%);   
+}
+    
+
